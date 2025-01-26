@@ -18,14 +18,9 @@ jobs:
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
-      with:
-        node-version: '23'  
-
-    - name: Install pnpm
-      run: npm install -g pnpm
 
     - name: Install dependencies
-      run: pnpm install
+      run: npm install
 
     - name: Run tests
-      run: pnpm test
+      run: npm test
