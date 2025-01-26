@@ -38,11 +38,13 @@ export function DeleteUserAlertDialog({ userId }: { readonly userId: string }) {
       if (stale_users) {
         client.setQueryData<UserModel[]>(["users"], stale_users);
       }
+      toast.error("Erro ao deletar usuário", {
+        description: "Você não tem permissão para deletar este usuário",
+      });
     },
     onSettled: () => {
       client.invalidateQueries({ queryKey: ["users"] });
     },
-
     onSuccess: () => toast.success("Usuário deletado com sucesso"),
   });
 

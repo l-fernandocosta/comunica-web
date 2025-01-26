@@ -36,7 +36,7 @@ export const Header = () => {
             variant={"secondary"}
             size="icon"
             title="Desconectar"
-            onProgress={onSignOut}
+            onClick={onSignOut}
           >
             <LogOut className="w-4 h-4" aria-label="Desconectar" />
           </Button>

@@ -2,6 +2,7 @@
   "name": "comunica.in.front",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -34,8 +35,8 @@
     "next": "15.1.6",
     "next-themes": "^0.4.4",
     "nookies": "^2.5.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.2",
     "sonner": "^1.7.2",
     "tailwind-merge": "^2.6.0",
